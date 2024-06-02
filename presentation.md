@@ -6,5 +6,5 @@ class: invert
 
 # test
 
-Lorem ipsum
+Lorem ipsum dolor
 ---
