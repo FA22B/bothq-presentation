@@ -6,7 +6,19 @@ title: BotHQ – Das modulare Discord-Bot-Framework
 author: Philipp, Batelka, Jan Mahnken, Daniel Quellenberg, Fabian Reichwald, Justus Sieweke, Christopher Spencer
 date: 5. Juni 2024
 paginate: true
+theme: gaia
+class: invert
 ---
+
+<style>
+    :root {
+    font-size: 2em;
+  }
+   img[alt~="center"] {
+        display: block;
+        margin: 0 auto;
+    }
+</style>
 
 # 
 
@@ -18,11 +30,11 @@ paginate: true
         display: block;
         margin: 0 auto;
     }
-    p {
+    /*p {
     font-size: .75rem;
     text-align: center;
     letter-spacing: 0;
-    }
+    }*/
 </style>
 
 ## Mittelstufenprojekt<br/>Discord-Bot-Framework
@@ -37,57 +49,47 @@ Fabian Reichwald, Justus Sieweke, Christopher Spencer
 ---
 
 ## Einleitung
-- Problemstellung: Welches Problem lösen wir
-- Einführung in das Projekt: Warum dieses Projekt? Was ist die Motivation dahinter?
+![w:1000 center](/images/discord_banner.bmp)
 
 ---
 
 ## Projektbeschreibung
 
 ### Projektidee und Zielsetzung
-- Was ist BotHQ?
-- Ziel des Projekts: Ein modularer, cloudbasierter Dienst zur Verwaltung von Discord-Bots
+- Ein modularer, cloudbasierter Dienst zur Verwaltung von Discord-Bots
 
 ### Anforderungen
-- Technische und funktionale Anforderungen
-- Zielgruppen und deren Erwartungen
+- Cloudbasiert
+- Einfachache Nutzung für erfahrene/unerfahrene Nutzer
+- Framework zur simplen entwicklung neuer Bots
 
 ---
 
 ## Planungsphase
 
 ### Projektplanung
-- Auswahl des Vorgehensmodells: Warum Scrum?
-- Sprintplanung und Meilensteine
+- Jira
+- Scrum
+- 3 Sprints a ~ 1 Monat
 
 ### Ressourcenplanung
 - Teamzusammensetzung und Verantwortlichkeiten
 - Benötigte Hardware und Software
+![bg right](/images/scrum.bmp)
 
 ---
 
-## Umsetzung 1/2
+## Umsetzung 
 
 ### Entwicklung des Frameworks
-- Überblick über die Architektur
-- Wichtige Technologien: Spring Boot, Angular, REST API, PostgreSQL
+- Webapplication auf Sgring-Boot Basis
+- Spring Boot, Angular, REST API, PostgreSQL
 
 ### Hauptfunktionen und Features
 - Modulares Plugin-System
 - Benutzerfreundliche Weboberfläche
 - Integration mit der Discord-API
 - Beispiel-Plugins (Willkommensnachricht, Rollenverwaltung, etc.)
-
----
-
-## Umsetzung 2/2
-
-### Design Patterns
-- Verwendete Entwurfsmuster (z.B. Singleton, Factory, Observer)
-
-### Qualitätssicherung
-- Code Reviews
-- Teststrategien: Unit Tests, Integrationstests, Systemtests
 
 ---
 
