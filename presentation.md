@@ -291,6 +291,33 @@ export class DashboardComponent {
 
 ---
 
+### Plugin (Java)
+
+```java
+@DiscordEventListener(GuildMemberJoinEvent.class)
+    public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
+        Guild guild = event.getGuild();
+        log.debug("User joined on guild " + guild.getId());
+
+        String channelId = channel.get(guild.getIdLong()).getValue();
+        TextChannel greetingChannel = guild.getTextChannelById(channelId);
+        if (greetingChannel == null) return;
+
+        log.debug("Greeting channel is \"" + greetingChannel.getName() + "\"");
+
+
+        String messageValue = message.get(guild.getIdLong()).getValue();
+
+        // It would be nice to have a proper service which allows for proper usage of objects,
+        // allowing things like {user.<name,mention>} etc.
+        messageValue = messageValue.replace("{user.name}", event.getUser().getEffectiveName());
+        messageValue = messageValue.replace("{user.mention}", event.getUser().getAsMention());
+
+        greetingChannel.sendMessage(messageValue).queue();
+```
+
+---
+
 ## Tests und Qualitätssicherung – Work in Progress
 
 **Teststrategie:**
@@ -357,7 +384,7 @@ export class DashboardComponent {
  - Aktivierung und Konfiguration von Plugins, ohne den Bot neu starten zu müssen
  - keine manulle bearbeitung von Dateien nötig
  - ohne technische Vorkenntnisse nutzbar
-   
+
 ---
 
 ## Marktvolumen und Marktpotenzial
