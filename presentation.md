@@ -12,7 +12,7 @@ backgroundImage: url('./images/bg-04.jpg')
 <style>
     :root {
         color: #444;
-        font-size: 1.8em;
+        font-size: 22px;
         letter-spacing: .5pt;
         text-align: left;
     }
@@ -73,18 +73,22 @@ BotHQ erleichtert die Erstellung, Verwaltung und Konfiguration von Discord-Bots,
 
 ---
 
-## Funktionen und Features
+# Funktionen und Features
 
 ### Hauptfunktionen
 
 - **Plugin-Verwaltung:** Einfache Aktivierung, Deaktivierung und Konfiguration von Plugins
+
 - **Benutzerfreundliche Weboberfläche:** Intuitive Verwaltung über das Frontend
+
 - **Discord-Bot-Integration:** Nahtlose Einbindung in Discord-Server
 
 ### Anwendungsfälle
 
 - **Moderation:** Automatische Verwaltung und Moderation von Discord-Servern
+
 - **Engagement:** Interaktive Features für Community-Engagement
+
 - **Automatisierung:** Automatisierung wiederkehrender Aufgaben und Prozesse
 
 ---
@@ -92,10 +96,14 @@ BotHQ erleichtert die Erstellung, Verwaltung und Konfiguration von Discord-Bots,
 ## Vorteile des Frameworks
 
 - **Automatisierte Einrichtung**: BotHQ automatisiert den Einrichtungsprozess für Discord-Bots.
+
 - **Benutzerfreundliche Oberfläche**: Eine intuitive Weboberfläche zur effizienten Verwaltung von Bots und Plugins.
+
 - **Modulares Framework**: Erweiterbar durch Hinzufügen neuer Plugins.
+
 - **Sicher und Zuverlässig**: Fokus auf Sicherheit und Zuverlässigkeit.
-- **Cloud-basierter Service**: Hosten Sie Ihre Bots auf unserer zuverlässigen Cloud-Plattform.
+
+- **Cloud-basierter Service**: Hosting auf zuverlässiger Cloud-Plattform.
 
 ---
 
@@ -103,6 +111,9 @@ BotHQ erleichtert die Erstellung, Verwaltung und Konfiguration von Discord-Bots,
 
 - [Hier Screenshot 1 einfügen]
 - [Hier Screenshot 2 einfügen]
+
+---
+# Technische Betrachtung
 
 ---
 
@@ -148,7 +159,7 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 ### Komponenten
 
 - **Core:** Grundlegende Logik und Datenverarbeitung
-- **Lib:** Wiederverwendbare Bibliotheken und Utilities
+- **Lib(rary):** Wiederverwendbare Bibliotheken und Utilities
 - **Frontend:** Benutzeroberfläche zur Verwaltung von Servern, Bots und Plugins
 - **Discord-Plugins:** Individuelle Plugins für spezifische Bot-Funktionen
 
@@ -160,7 +171,6 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 ---
 
 ![width:900px center](./images/architektur.png)
-
 
 ---
 
@@ -174,7 +184,7 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 
 | Core-Services | Beschreibung                                     |
 | ------------- | ------------------------------------------------ |
-| `BotService`  | Steuert den Betrieb des Discord-Bots.             |
+| `BotService`  | Steuert den Betrieb des Discord-Bots.            |
 |               | Verarbeitet Befehle und Ereignisse.              |
 |               | Interagiert mit Plugins.                         |
 | `UserService` | Verwalten der Benutzerinformationen und -rollen. |
@@ -234,17 +244,7 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 
 ---
 
-# Zusammenfassung
-
-BotHQ bietet ein flexibles und leistungsfähiges Discord-Bot-Framework mit:
-
-- Einfachem Benutzer- und Plugin-Management.
-- Leistungsstarken Moderations- und Begrüßungsfunktionen.
-- Umfangreicher Unterstützung und Dokumentation.
-
----
-
-## Wichtiger Quellcode
+## Quellcode-Beispiele
 
 ### Backend (Spring Boot)
 
@@ -288,7 +288,7 @@ export class DashboardComponent {
 
 ---
 
-## Tests und Qualitätssicherung
+## Tests und Qualitätssicherung – Work in Progress
 
 **Teststrategie:**
 
@@ -298,11 +298,9 @@ export class DashboardComponent {
 
 **Testergebnisse:**
 
-- **Unit Tests:** 95% Abdeckung
+- **Unit Tests:** geplant sind > 95% Abdeckung
 - **Integrationstests:** Erfolgreiche Verbindungen zwischen Komponenten
 - **Systemtests:** Alle Hauptfunktionen arbeiten wie erwartet
-
-
 
 **Qualitätssicherung:**
 
@@ -311,7 +309,7 @@ export class DashboardComponent {
 
 ---
 
-## Nutzerdokumentation
+## Nutzerdokumentation – Work in Progress
 
 **Benutzerhandbuch:**
 
@@ -330,42 +328,51 @@ export class DashboardComponent {
 
 ---
 
-# Wirtschaftliche Betrachtung
-
-## Marktuntersuchung
+# Wirtschaftliche Betrachtung – Marktuntersuchung
 
 ---
 
-### Zielgruppenanalyse und Marktpotenzial
+## Zielgruppenanalyse und Marktpotenzial
 
-- **Gaming-Communities**: Discord ist bei Gamern und Gaming-Communities beliebt, die Bots für Management, Spielinformationen und Eventorganisation nutzen. Es bietet eine Plattform für Spieler, um sich zu verbinden, zu kommunizieren und zusammenzuarbeiten.
-- **Technikbegeisterte und Entwickler**: Es gibt eine wachsende Anzahl von Menschen, die sich für Bot-Programmierung interessieren, auch ohne tiefgehendes technisches Wissen. Discord bietet ihnen eine benutzerfreundliche Umgebung, um zu erkunden und ihre eigenen Bots zu erstellen.
-- **Unternehmen und Organisationen**: Discord wird von Unternehmen und Organisationen für Teamkommunikation, Zusammenarbeit und Automatisierung genutzt. Es bietet Funktionen wie Sprach- und Videoanrufe, Bildschirmfreigabe und Integrationen mit anderen Tools und Plattformen.
-- **Content-Ersteller und Streamer**: Content-Ersteller und Streamer nutzen Discord, um mit ihrer Community zu interagieren, mit ihrem Publikum in Kontakt zu treten und eine Plattform für ihre Fans zu bieten, um miteinander zu kommunizieren. Es bietet Funktionen wie Chat-Kanäle, Sprachkanäle und Moderationstools.
+- **Gaming-Communities**: Beliebt bei Gamern und Gaming-Communities für Management, Spielinformationen und Eventorganisation.
+
+- **Technikbegeisterte und Entwickler**: Benutzerfreundliche Umgebung für Bot-Programmierung und Erstellung eigener Bots.
+
+- **Unternehmen und Organisationen**: Genutzt für Teamkommunikation, Zusammenarbeit und Automatisierung.
+
+- **Content-Ersteller und Streamer**: Interaktion mit der Community, Kontakt mit dem Publikum und Plattform für Fans.
 
 ---
 
 ## Marktvolumen und Marktpotenzial
 
 - **Nutzerbasis von Discord**: Über 250 Mio. registrierte Nutzer
+
 - **Verwendung von Discord-Bots**: Etwa 30% der Discord-Server nutzen Bots
+
 - **Marktgröße**: Potenzielles Marktvolumen von 30 Mio. aktiven Nutzern
+
 - **Wachstum des Bot-Marktes**: Wachstum des Bot-Marktes
+
 - **Steigende Nachfrage**: Breite Zielgruppe und Erweiterungsmöglichkeiten
+
 - **Wettbewerbsvorteile**: Automatisierte Einrichtung, benutzerfreundliche Oberfläche, modulares Framework, Sicherheit und Zuverlässigkeit
 
 ---
 
-### Wachstumschancen
+## Wachstumschancen
 
 - **Wachstum der Discord-Plattform**: Discord hat in den letzten Jahren eine große Nutzerbasis aufgebaut und wird in verschiedenen Communities und Branchen immer beliebter.
+
 - **Steigende Nachfrage nach Automatisierung**: Immer mehr Discord-Server-Besitzer suchen nach Möglichkeiten, ihre Server zu automatisieren und repetitive Aufgaben zu vereinfachen.
+
 - **Erweiterte Funktionen und Integrationen**: Discord bietet eine umfangreiche API, die es Entwicklern ermöglicht, ihre Bots mit anderen Diensten und Plattformen zu integrieren.
+
 - **Marktexpansion**: Discord wird nicht nur in Gaming-Communities, sondern auch in Bereichen wie Bildung, Unternehmenskommunikation und sozialen Netzwerken immer häufiger genutzt.
 
 ---
 
-# Kostenplanung
+# Wirtschaftliche Betrachtung – Kostenplanung
 
 <!-- ## Personalkosten
 
@@ -397,47 +404,35 @@ export class DashboardComponent {
 | _SSL-Zertifikat_    |      1 |      50 EUR |       50 EUR |
 | _Backup-Lösung_     |      1 |     300 EUR |      300 EUR |
 | _Cloud-Speicher_    |      1 |     200 EUR |      200 EUR |
-| **Software gesamt** |        |             |     9760 EUR | 
+| **Software gesamt** |        |             |     9760 EUR |
 -->
-
 
 ## Gesamtkosten des Projekts
 
 | Kostenart        | Kostenbetrag |
-| ---------------- | ------------ |
+| ---------------- | -----------: |
 | Personalkosten   | 18.384 EUR   |
 | Sachmittelkosten | 9.060 EUR    |
 | Gesamtkosten     | 27.444 EUR   |
 
 ---
 
-# Wirtschaftlichkeitsberechnung
+## Wirtschaftlichkeitsberechnung
 
-## Gewinnschwellenberechnung
+### Gewinnschwellenberechnung
 
 | Kostenart                 | Kostenbetrag               |
-| ------------------------- | -------------------------- |
+| ------------------------- | -------------------------: |
 | Gesamtkosten des Projekts | 27.444 EUR                 |
 | Preis des Produktabos     | 10 EUR pro Monat           |
 | Gewinnschwelle            | 2.745 Abos für einen Monat |
 
----
-
-## Amortisationsrechnung
+### Amortisationsrechnung
 
 | Dauer                | Einnahmen                           |
-| -------------------- | ----------------------------------- |
+| -------------------- | ----------------------------------: |
 | Monatliche Einnahmen | 500 Abos x 10 EUR = 5.000 EUR       |
 | Amortisationszeit    | 27.444 EUR / 5.000 EUR = 5,5 Monate |
-
----
-
-# Zusammenfassung
-
-- **Zielgruppe**: Gamer, Entwickler, Unternehmen und Streamer
-- **Kosten**: Die Kosten sind überschaubar
-- **Amortisation**: Nach 5,5 Monaten hat sich das Produkt amortisiert
-- **Potenzial**: Sehr viele Benefits für die anvisierte Nutzerbasis
 
 ---
 
