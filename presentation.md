@@ -347,6 +347,19 @@ export class DashboardComponent {
 
 ---
 
+## Konkurenzanalyse
+
+**Konkurenzprodukte:** Dyno Bot, Mee6, Carl-bot, GAwesome Bot, Nightbot, BotGhost
+
+**Vorteile von BotHQ:** 
+ - Automatisierte Installation und Konfiguration
+ - hohe Benutzerfreundlichkeit
+ - Aktivierung und Konfiguration von Plugins, ohne den Bot neu starten zu müssen
+ - keine manulle bearbeitung von Dateien nötig
+ - ohne technische Vorkenntnisse nutzbar
+   
+---
+
 ## Marktvolumen und Marktpotenzial
 
 - **Nutzerbasis von Discord**: Über 250 Mio. registrierte Nutzer
