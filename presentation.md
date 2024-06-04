@@ -50,9 +50,9 @@ backgroundImage: url('./images/bg-04.jpg')
 
 # Was ist BotHQ?
 
-BotHQ ist ein modulares Framework zur Erstellung und Verwaltung von Discord-Bots. Es bietet eine benutzerfreundliche Weboberfläche und eine robuste API zur Integration und Verwaltung von Plugins.
+BotHQ ist ein modulares Framework zum Hinzufügen und zur Verwaltung unseres Discord-Bots. Es bietet eine benutzerfreundliche Weboberfläche und eine robuste API zur Integration und Verwaltung von Plugins.
 
-Durch die Verwendung von Plugins können Bots automatisch verschiedene Aufgaben ausführen, wie das Senden von Nachrichten, die Moderation von Benutzern, das Hosten von Spielen und sogar das Abspielen von Musik.
+Durch die Verwendung von Plugins kann unser Bot automatisch verschiedene Aufgaben ausführen, wie das Senden von Nachrichten, die Moderation von Benutzern, das Hosten von Spielen und sogar das Abspielen von Musik.
 
 ---
 
@@ -69,7 +69,7 @@ Die Entwicklung eines modularen Discord-Bot-Frameworks, das als Cloud-Service an
 - Content Creator und Streamer
 
 **Nutzen:**
-BotHQ erleichtert die Erstellung, Verwaltung und Konfiguration von Discord-Bots, indem es eine benutzerfreundliche Oberfläche und eine flexible API bietet.
+BotHQ erleichtert die Verwaltung und Konfiguration eines universellen Discord-Bots, indem es eine benutzerfreundliche Oberfläche und eine flexible API bietet.
 
 ---
 
@@ -95,9 +95,9 @@ BotHQ erleichtert die Erstellung, Verwaltung und Konfiguration von Discord-Bots,
 
 ## Vorteile des Frameworks
 
-- **Automatisierte Einrichtung**: BotHQ automatisiert den Einrichtungsprozess für Discord-Bots.
+- **Automatisierte Einrichtung**: BotHQ automatisiert den Einrichtungsprozess des Discord-Bots.
 
-- **Benutzerfreundliche Oberfläche**: Eine intuitive Weboberfläche zur effizienten Verwaltung von Bots und Plugins.
+- **Benutzerfreundliche Oberfläche**: Eine intuitive Weboberfläche zur effizienten Verwaltung des Bots und Plugins.
 
 - **Modulares Framework**: Erweiterbar durch Hinzufügen neuer Plugins.
 
@@ -163,7 +163,7 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 
 - **Core:** Grundlegende Logik und Datenverarbeitung
 - **Lib(rary):** Wiederverwendbare Bibliotheken und Utilities
-- **Frontend:** Benutzeroberfläche zur Verwaltung von Servern, Bots und Plugins
+- **Frontend:** Benutzeroberfläche zur Verwaltung von Servern, des Bots und Plugins
 - **Discord-Plugins:** Individuelle Plugins für spezifische Bot-Funktionen
 
 ### Interaktionen
