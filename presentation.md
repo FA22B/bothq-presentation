@@ -116,6 +116,7 @@ BotHQ erleichtert die Verwaltung und Konfiguration eines universellen Discord-Bo
 ![bg width:80%](./images/plugin-conf.png)
 
 ---
+
 # Technische Betrachtung
 
 ---
@@ -185,13 +186,13 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 - Verantwortlich für die grundlegenden Funktionen und die Verwaltung der Bot-Operationen.
 - Interagiert mit anderen Modulen und Diensten, um Befehle zu verarbeiten und Benutzer zu verwalten.
 
-| Core-Services | Beschreibung                                     |
-| ------------- | ------------------------------------------------ |
-| `BotService`  | Steuert den Betrieb des Discord-Bots.            |
-|               | Verarbeitet Befehle und Ereignisse.              |
-|               | Interagiert mit Plugins.                         |
-| `UserService` | Verwalten der Benutzerinformationen und -rollen. |
-|               | Authentifizierung und Autorisierung.             |
+| Core-Services | Beschreibung                                    |
+| ------------- | ----------------------------------------------- |
+| `BotService`  | Steuert den Betrieb des Discord-Bots            |
+|               | Verarbeitet Befehle und Ereignisse              |
+|               | Interagiert mit Plugins                         |
+| `UserService` | Verwalten der Benutzerinformationen und -rollen |
+|               | Authentifizierung und Autorisierung             |
 
 ---
 
@@ -201,15 +202,15 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 - Macht den Code sauberer und wiederverwendbar.
 - Spart Zeit bei der Entwicklung.
 
-| Library           | Beschreibung                                            |
-| ----------------- | ------------------------------------------------------- |
-| `UtilityFunction` | Allgemeine Hilfsfunktionen.                             |
-|                   | Methoden für String-Manipulationen, Formatierungen      |
-|                   | und Validierungen.                                      |
-|                   | Reduziert Code-Duplikationen.                           |
-| `DatabaseHelper`  | Vereinfachung von Datenbankoperationen.                 |
-|                   | Verwaltung von Abfragen und Transaktionen.              |
-|                   | Unterstützung bei der Erstellung von Datenbankschemata. |
+| Library           | Beschreibung                                           |
+| ----------------- | ------------------------------------------------------ |
+| `UtilityFunction` | Allgemeine Hilfsfunktionen                             |
+|                   | Methoden für String-Manipulationen, Formatierungen     |
+|                   | und Validierungen                                      |
+|                   | Reduziert Code-Duplikationen                           |
+| `DatabaseHelper`  | Vereinfachung von Datenbankoperationen                 |
+|                   | Verwaltung von Abfragen und Transaktionen              |
+|                   | Unterstützung bei der Erstellung von Datenbankschemata |
 
 ---
 
@@ -219,14 +220,14 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 - Ermöglicht Nutzern, den Bot einfach zu verwalten.
 - Zeigt wichtige Informationen und erlaubt die einfache Konfiguration.
 
-| Frontend-Komponenten     | Beschreibung                                          |
-| ------------------------ | ----------------------------------------------------- |
-| `DashboardComponent`     | Zentrale Übersicht und Verwaltung.                    |
-|                          | Darstellung von Statistiken und Statusinformationen.  |
-|                          | Navigation zu Verwaltungskomponenten.                 |
-| `PluginManagerComponent` | Verwaltung und Konfiguration von Plugins.             |
-|                          | Aktivierung, Deaktivierung und Anpassung von Plugins. |
-|                          | Schnittstelle zur Backend-API.                        |
+| Frontend-Komponenten     | Beschreibung                                         |
+| ------------------------ | ---------------------------------------------------- |
+| `DashboardComponent`     | Zentrale Übersicht und Verwaltung                    |
+|                          | Darstellung von Statistiken und Statusinformationen  |
+|                          | Navigation zu Verwaltungskomponenten                 |
+| `PluginManagerComponent` | Verwaltung und Konfiguration von Plugins             |
+|                          | Aktivierung, Deaktivierung und Anpassung von Plugins |
+|                          | Schnittstelle zur Backend-API                        |
 
 ---
 
@@ -236,14 +237,14 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 - Erweitern die Fähigkeiten des Bots.
 - Bieten spezifische Funktionen wie Begrüßungen und Moderation.
 
-| Plugins            | Beschreibung                             |
-| ------------------ | ---------------------------------------- |
-| `WelcomePlugin`    | Begrüßt neue Mitglieder auf dem Server.  |
-|                    | Anpassbare Begrüßungstexte.              |
-|                    | Unterstützt dynamische Inhalte.          |
-| `ModerationPlugin` | Verwalten von Servermoderation.          |
-|                    | Kick- und Ban-Funktionalitäten.          |
-|                    | Protokollierung von Moderationsaktionen. |
+| Plugins            | Beschreibung                            |
+| ------------------ | --------------------------------------- |
+| `WelcomePlugin`    | Begrüßt neue Mitglieder auf dem Server  |
+|                    | Anpassbare Begrüßungstexte              |
+|                    | Unterstützt dynamische Inhalte          |
+| `ModerationPlugin` | Verwalten von Servermoderation          |
+|                    | Kick- und Ban-Funktionalitäten          |
+|                    | Protokollierung von Moderationsaktionen |
 
 ---
 
@@ -384,12 +385,13 @@ public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
 
 **Konkurenzprodukte:** Dyno Bot, Mee6, Carl-bot, GAwesome Bot, Nightbot, BotGhost
 
-**Vorteile von BotHQ:** 
- - Automatisierte Installation und Konfiguration
- - hohe Benutzerfreundlichkeit
- - Aktivierung und Konfiguration von Plugins, ohne den Bot neu starten zu müssen
- - keine manulle bearbeitung von Dateien nötig
- - ohne technische Vorkenntnisse nutzbar
+**Vorteile von BotHQ:**
+
+- Automatisierte Installation und Konfiguration
+- hohe Benutzerfreundlichkeit
+- Aktivierung und Konfiguration von Plugins, ohne den Bot neu starten zu müssen
+- keine manulle bearbeitung von Dateien nötig
+- ohne technische Vorkenntnisse nutzbar
 
 ---
 
@@ -460,9 +462,9 @@ public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
 
 | Kostenart        | Kostenbetrag |
 | ---------------- | -----------: |
-| Personalkosten   | 18.384 EUR   |
-| Sachmittelkosten | 9.060 EUR    |
-| Gesamtkosten     | 27.444 EUR   |
+| Personalkosten   |   18.384 EUR |
+| Sachmittelkosten |    9.060 EUR |
+| Gesamtkosten     |   27.444 EUR |
 
 ---
 
@@ -470,17 +472,17 @@ public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
 
 ### Gewinnschwellenberechnung
 
-| Kostenart                 | Kostenbetrag               |
+| Kostenart                 |               Kostenbetrag |
 | ------------------------- | -------------------------: |
-| Gesamtkosten des Projekts | 27.444 EUR                 |
-| Preis des Produktabos     | 10 EUR pro Monat           |
+| Gesamtkosten des Projekts |                 27.444 EUR |
+| Preis des Produktabos     |           10 EUR pro Monat |
 | Gewinnschwelle            | 2.745 Abos für einen Monat |
 
 ### Amortisationsrechnung
 
-| Dauer                | Einnahmen                           |
+| Dauer                |                           Einnahmen |
 | -------------------- | ----------------------------------: |
-| Monatliche Einnahmen | 500 Abos x 10 EUR = 5.000 EUR       |
+| Monatliche Einnahmen |       500 Abos x 10 EUR = 5.000 EUR |
 | Amortisationszeit    | 27.444 EUR / 5.000 EUR = 5,5 Monate |
 
 ---
