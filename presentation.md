@@ -109,8 +109,10 @@ BotHQ erleichtert die Erstellung, Verwaltung und Konfiguration von Discord-Bots,
 
 ## Screenshots
 
-- [Hier Screenshot 1 einfügen]
-- [Hier Screenshot 2 einfügen]
+![width:900px center](./images/server-conf.png)
+
+
+![width:900px center](./images/plugin-conf.png)
 
 ---
 # Technische Betrachtung
