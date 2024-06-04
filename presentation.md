@@ -252,17 +252,23 @@ Das Projekt wurde nach dem agilen Scrum-Framework durchgeführt, angepasst an di
 ### Backend (Spring Boot)
 
 ```java
-@RestController
-@RequestMapping("/api/bots")
-public class BotController {
-    @Autowired
-    private BotService botService;
+// Verify that the class is of type IPlugin
+if (IPlugin.class.isAssignableFrom(cls)) {
 
-    @PostMapping
-    public ResponseEntity<Bot> createBot(@RequestBody Bot bot) {
-        return ResponseEntity.ok(botService.createBot(bot));
+    // Create a new instance of the valid class
+    var pluginInstance = (IPlugin) cls.getDeclaredConstructor().newInstance();
+
+    log.info("Loaded plugin: {} ({})", className, jarFileName);
+
+    for (var method : cls.getDeclaredMethods()) {
+        if (method.isAnnotationPresent(DiscordEventListener.class)) {
+
+            // Non-static methods
+            plugin.getEventListeners().put(method, method.getAnnotation(DiscordEventListener.class).value());
+
+            log.info("Added event listener: {}.{} ({})", className, method.getName(), jarFileName);
+        }
     }
-}
 ```
 
 ---
