@@ -295,25 +295,25 @@ export class DashboardComponent {
 
 ```java
 @DiscordEventListener(GuildMemberJoinEvent.class)
-    public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
-        Guild guild = event.getGuild();
-        log.debug("User joined on guild " + guild.getId());
+public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
+    Guild guild = event.getGuild();
+    log.debug("User joined on guild " + guild.getId());
 
-        String channelId = channel.get(guild.getIdLong()).getValue();
-        TextChannel greetingChannel = guild.getTextChannelById(channelId);
-        if (greetingChannel == null) return;
+    String channelId = channel.get(guild.getIdLong()).getValue();
+    TextChannel greetingChannel = guild.getTextChannelById(channelId);
+    if (greetingChannel == null) return;
 
-        log.debug("Greeting channel is \"" + greetingChannel.getName() + "\"");
+    log.debug("Greeting channel is \"" + greetingChannel.getName() + "\"");
 
+    String messageValue = message.get(guild.getIdLong()).getValue();
 
-        String messageValue = message.get(guild.getIdLong()).getValue();
+    // It would be nice to have a proper service which allows for proper usage of objects,
+    // allowing things like {user.<name,mention>} etc.
+    messageValue = messageValue.replace("{user.name}", event.getUser().getEffectiveName());
+    messageValue = messageValue.replace("{user.mention}", event.getUser().getAsMention());
 
-        // It would be nice to have a proper service which allows for proper usage of objects,
-        // allowing things like {user.<name,mention>} etc.
-        messageValue = messageValue.replace("{user.name}", event.getUser().getEffectiveName());
-        messageValue = messageValue.replace("{user.mention}", event.getUser().getAsMention());
-
-        greetingChannel.sendMessage(messageValue).queue();
+    greetingChannel.sendMessage(messageValue).queue();
+}
 ```
 
 ---
