@@ -310,6 +310,9 @@ export class ServerPluginDataService {
     }
 }
 ```
+
+---
+
 ```typescript
 export class PluginSettingsComponent {
     pluginData$: Observable<PluginData | undefined>;
