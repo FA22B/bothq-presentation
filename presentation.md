@@ -270,6 +270,7 @@ if (IPlugin.class.isAssignableFrom(cls)) {
             log.info("Added event listener: {}.{} ({})", className, method.getName(), jarFileName);
         }
     }
+}
 ```
 
 ---
@@ -277,24 +278,57 @@ if (IPlugin.class.isAssignableFrom(cls)) {
 ### Frontend (Angular)
 
 ```typescript
-@Component({
-  selector: "app-plugin-manager",
-  templateUrl: "./plugin-manager.component.html",
-})
-export class PluginManagerComponent {
-  // Methoden zur Verwaltung von Plugins
+export class ServerPluginDataService {
+    private pluginListRefresh = new ReplaySubject<void>();
+    pluginList$: Observable<PluginData[]>;
+
+    private selectedPluginIdRefresh = new BehaviorSubject<number>(-1);
+    selectedPlugin$: Observable<PluginData | undefined>
+    
+    constructor(private httpClient: HttpClient,
+                private authService: AuthService) {
+        this.pluginList$ = this.pluginListRefresh.asObservable().pipe(
+            switchMap(() => this.getAllPlugins())
+        );
+
+        this.selectedPlugin$ = combineLatest([
+            this.pluginList$, 
+            this.selectedPluginIdRefresh.asObservable()]
+        ).pipe(
+            map(([plugins, selectedId]) => {
+                if (selectedId == -1)
+                    return undefined;
+
+                return plugins.find((plugin) => plugin.pluginId == selectedId);
+            })
+        )
+
+        this.authService.loggedIn$.subscribe(loggedIn => {
+            if (loggedIn)
+                this.updatePlugins()
+        })
+    }
+}
+```
+```typescript
+export class PluginSettingsComponent {
+    pluginData$: Observable<PluginData | undefined>;
+
+    constructor(private pluginDataService: ServerPluginDataService,
+                private serverDataService: ServerDataService,
+                private httpClient: HttpClient) {
+
+        this.pluginData$ = combineLatest([
+            this.pluginDataService.selectedPlugin$, 
+            this.serverDataService.selectedServer$]
+        ).pipe(
+            switchMap(([selectedPlugin, selectedServer]) => 
+                this.getSelectedPluginData(selectedPlugin, selectedServer))
+        )
+    }
 }
 ```
 
-```typescript
-@Component({
-  selector: "app-dashboard",
-  templateUrl: "./dashboard.component.html",
-})
-export class DashboardComponent {
-  // Logik für das Dashboard
-}
-```
 
 ---
 
@@ -313,9 +347,7 @@ public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
     log.debug("Greeting channel is \"" + greetingChannel.getName() + "\"");
 
     String messageValue = message.get(guild.getIdLong()).getValue();
-
-    // It would be nice to have a proper service which allows for proper usage of objects,
-    // allowing things like {user.<name,mention>} etc.
+    
     messageValue = messageValue.replace("{user.name}", event.getUser().getEffectiveName());
     messageValue = messageValue.replace("{user.mention}", event.getUser().getAsMention());
 
