@@ -332,7 +332,6 @@ export class PluginSettingsComponent {
 }
 ```
 
-
 ---
 
 ### Plugin (Java)
@@ -438,7 +437,7 @@ public void onGuildMemberJoin(@NotNull GuildMemberJoinEvent event) {
 
 - **Marktgröße**: Potenzielles Marktvolumen von 30 Mio. aktiven Nutzern
 
-- **Wachstum des Bot-Marktes**: Wachstum des Bot-Marktes
+- **Wachstum des Bot-Marktes**: Immer mehr Discord-Server-Admins wollen ihr Bot-Management automatisieren 
 
 - **Steigende Nachfrage**: Breite Zielgruppe und Erweiterungsmöglichkeiten
 
